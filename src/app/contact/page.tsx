@@ -1,12 +1,15 @@
-import { ArrowRight } from "@phosphor-icons/react/ssr";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
+import ContactForm from "@/components/ContactForm";
 
-const inputClass =
-  "mt-2 w-full rounded-sm border border-hairline bg-white px-4 py-2.5 text-sm text-charcoal placeholder:text-slate/60 focus:border-navy focus:outline-none";
-const labelClass = "block text-sm font-medium text-charcoal";
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Have questions about aviation careers or admissions? Get in touch with Wing Tech Aviation in Madhapur, Hyderabad.",
+};
 
 export default function ContactPage() {
   return (
@@ -65,19 +68,44 @@ export default function ContactPage() {
               <dl className="mt-3 space-y-1.5 text-sm text-charcoal">
                 <div className="flex gap-2">
                   <dt className="font-medium text-navy">Phone:</dt>
-                  <dd>[Insert Official Number]</dd>
+                  <dd>
+                    <a href="tel:+919515075140" className="hover:text-navy">
+                      +91 95150 75140
+                    </a>
+                  </dd>
                 </div>
                 <div className="flex gap-2">
                   <dt className="font-medium text-navy">WhatsApp:</dt>
-                  <dd>[Insert Official WhatsApp Number]</dd>
+                  <dd>
+                    <a
+                      href="https://wa.me/919515075140"
+                      className="hover:text-navy"
+                    >
+                      +91 95150 75140
+                    </a>
+                  </dd>
                 </div>
                 <div className="flex gap-2">
                   <dt className="font-medium text-navy">Email:</dt>
-                  <dd>[Insert Official Email]</dd>
+                  <dd>
+                    <a
+                      href="mailto:bobbyazmeera9@gmail.com"
+                      className="hover:text-navy"
+                    >
+                      bobbyazmeera9@gmail.com
+                    </a>
+                  </dd>
                 </div>
                 <div className="flex gap-2">
                   <dt className="font-medium text-navy">Website:</dt>
-                  <dd>[Insert Official Website URL]</dd>
+                  <dd>
+                    <a
+                      href="https://wingtechaviation.com"
+                      className="hover:text-navy"
+                    >
+                      wingtechaviation.com
+                    </a>
+                  </dd>
                 </div>
               </dl>
             </Reveal>
@@ -117,103 +145,7 @@ export default function ContactPage() {
                   Send Us a Message
                 </h2>
 
-                <form className="mt-10">
-              <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                  <label className={labelClass} htmlFor="name">
-                    Name
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="name"
-                    name="name"
-                    autoComplete="name"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="mobile">
-                    Mobile
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="tel"
-                    id="mobile"
-                    name="mobile"
-                    autoComplete="tel"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="email"
-                    id="email"
-                    name="email"
-                    autoComplete="email"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="city">
-                    City
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="city"
-                    name="city"
-                    autoComplete="address-level2"
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label className={labelClass} htmlFor="preferredProgramme">
-                    Preferred Programme
-                  </label>
-                  <select
-                    className={inputClass}
-                    id="preferredProgramme"
-                    name="preferredProgramme"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Select a programme
-                    </option>
-                    <option value="cpl">Commercial Pilot Licence (CPL)</option>
-                    <option value="ame">
-                      Aircraft Maintenance Engineering (AME)
-                    </option>
-                    <option value="cabin-crew">Cabin Crew</option>
-                    <option value="airport-management">
-                      Airport Management &amp; Operations
-                    </option>
-                  </select>
-                </div>
-                <div className="sm:col-span-2">
-                  <label className={labelClass} htmlFor="message">
-                    Message
-                  </label>
-                  <textarea
-                    className={inputClass}
-                    id="message"
-                    name="message"
-                    rows={5}
-                  />
-                </div>
-              </div>
-
-                  <button
-                    type="submit"
-                    className="group mt-10 inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-200 hover:bg-navy-dark"
-                  >
-                    Submit Enquiry
-                    <ArrowRight
-                      size={16}
-                      className="transition-transform duration-200 group-hover:translate-x-1"
-                    />
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </Reveal>

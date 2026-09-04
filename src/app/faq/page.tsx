@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions",
+  description:
+    "Answers to common questions about aviation careers, eligibility, admissions and training at Wing Tech Aviation.",
+};
 
 const faqs = [
   {

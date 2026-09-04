@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
+
+export const metadata: Metadata = {
+  title: "Career Pathways",
+  description:
+    "Aviation offers more than one career. Compare the CPL, AME, Cabin Crew and Airport Management pathways to find the one suited to your interests and goals.",
+};
 
 const pathways = [
   {

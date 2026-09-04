@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Cabin Crew Pathway",
+  description:
+    "Cabin crew professionals combine passenger service, safety, communication, teamwork and emergency preparedness. Explore the Cabin Crew career pathway.",
+};
 
 export default function CabinCrewPage() {
   return (

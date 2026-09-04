@@ -16,7 +16,6 @@ const primaryNav = [
   { href: "/about", label: "About" },
   { href: "/admissions", label: "Admissions" },
   { href: "/campus", label: "Campus" },
-  { href: "/faculty", label: "Faculty" },
   { href: "/contact", label: "Contact" },
 ];
 

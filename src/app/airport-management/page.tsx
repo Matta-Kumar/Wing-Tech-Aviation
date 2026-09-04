@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Airport Management & Operations Pathway",
+  description:
+    "Airports need thousands of professionals across passenger services, ground operations, baggage, customer service and administration. Explore this career pathway.",
+};
 
 export default function AirportManagementPage() {
   return (

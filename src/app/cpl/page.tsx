@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Commercial Pilot Licence (CPL) Pathway",
+  description:
+    "Explore the Commercial Pilot Licence pathway — academic preparation, aviation knowledge, medical fitness and examinations for a career as a professional pilot.",
+};
 
 const journey = [
   "Academic eligibility.",

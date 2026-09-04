@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Faculty",
+  description:
+    "Our faculty and academic support team help students understand aviation concepts, professional expectations and the learning pathway for their chosen programme.",
+  robots: { index: false, follow: false },
+};
 
 const profileFields = [
   { label: "Designation", value: "To be announced" },

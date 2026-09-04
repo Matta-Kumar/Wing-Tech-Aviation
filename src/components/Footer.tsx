@@ -11,7 +11,6 @@ const quickLinks = [
   { href: "/eligibility", label: "Eligibility" },
   { href: "/admissions", label: "Admissions" },
   { href: "/campus", label: "Campus" },
-  { href: "/faculty", label: "Faculty" },
   { href: "/career-pathways", label: "Career Pathways" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
@@ -58,23 +57,40 @@ export default function Footer() {
             <br />
             Madhapur, Hyderabad, Telangana – 500081
             <br />
-            Phone: [Official Number]
+            Phone:{" "}
+            <a href="tel:+919515075140" className="hover:text-white">
+              +91 95150 75140
+            </a>
             <br />
-            Email: [Official Email]
+            Email:{" "}
+            <a
+              href="mailto:bobbyazmeera9@gmail.com"
+              className="hover:text-white"
+            >
+              bobbyazmeera9@gmail.com
+            </a>
           </address>
         </div>
       </div>
 
       <div className="border-t border-hairline-on-dark px-6 py-6">
-        <p className="mx-auto max-w-6xl text-xs leading-relaxed text-white/40">
-          Information on this website is intended to provide general
-          guidance about aviation education and career pathways. Programme
-          eligibility, training requirements, medical requirements,
-          examinations and career outcomes may depend on applicable
-          regulations, training arrangements and employer requirements. Wing
-          Tech Aviation does not guarantee employment, licensing, medical
-          clearance or career outcomes.
-        </p>
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs leading-relaxed text-white/40">
+            Information on this website is intended to provide general
+            guidance about aviation education and career pathways. Programme
+            eligibility, training requirements, medical requirements,
+            examinations and career outcomes may depend on applicable
+            regulations, training arrangements and employer requirements.
+            Wing Tech Aviation does not guarantee employment, licensing,
+            medical clearance or career outcomes.
+          </p>
+          <Link
+            href="/privacy"
+            className="mt-3 inline-block text-xs text-white/40 hover:text-white"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </footer>
   );

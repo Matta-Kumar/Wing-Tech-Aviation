@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Wing Tech Aviation is an aviation-focused training centre in Madhapur, Hyderabad, helping students explore structured career pathways in the aviation industry.",
+};
 
 const leaders = [
   {

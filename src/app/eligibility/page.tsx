@@ -1,7 +1,14 @@
-import { ArrowRight } from "@phosphor-icons/react/ssr";
+import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import Image from "next/image";
+import EligibilityForm from "@/components/EligibilityForm";
+
+export const metadata: Metadata = {
+  title: "Check Your Eligibility",
+  description:
+    "Different aviation careers have different eligibility requirements. Check what's needed for CPL, AME, Cabin Crew and Airport Management pathways.",
+};
 
 const overview = [
   {
@@ -33,10 +40,6 @@ const nextSteps = [
   "If required, we recommend an assessment or counselling session.",
   "We guide you through the next steps.",
 ];
-
-const inputClass =
-  "mt-2 w-full rounded-sm border border-hairline bg-white px-4 py-2.5 text-sm text-charcoal placeholder:text-slate/60 focus:border-navy focus:outline-none";
-const labelClass = "block text-sm font-medium text-charcoal";
 
 export default function EligibilityPage() {
   return (
@@ -132,174 +135,7 @@ export default function EligibilityPage() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <form className="lg:col-span-8">
-              <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                  <label className={labelClass} htmlFor="studentName">
-                    Student Name
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="studentName"
-                    name="studentName"
-                    autoComplete="name"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="mobile">
-                    Mobile Number
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="tel"
-                    id="mobile"
-                    name="mobile"
-                    autoComplete="tel"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="email"
-                    id="email"
-                    name="email"
-                    autoComplete="email"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="dob">
-                    Date of Birth
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="date"
-                    id="dob"
-                    name="dob"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="city">
-                    City
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="city"
-                    name="city"
-                    autoComplete="address-level2"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="yearOfPassing">
-                    Year of Passing
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="yearOfPassing"
-                    name="yearOfPassing"
-                    inputMode="numeric"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="board">
-                    Board
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="board"
-                    name="board"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="preferredProgramme">
-                    Preferred Programme
-                  </label>
-                  <select
-                    className={inputClass}
-                    id="preferredProgramme"
-                    name="preferredProgramme"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Select a programme
-                    </option>
-                    <option value="cpl">Commercial Pilot Licence (CPL)</option>
-                    <option value="ame">
-                      Aircraft Maintenance Engineering (AME)
-                    </option>
-                    <option value="cabin-crew">Cabin Crew</option>
-                    <option value="airport-management">
-                      Airport Management &amp; Operations
-                    </option>
-                  </select>
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="physics">
-                    Physics
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="physics"
-                    name="physics"
-                    placeholder="Marks / percentage"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="mathematics">
-                    Mathematics
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="mathematics"
-                    name="mathematics"
-                    placeholder="Marks / percentage"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="chemistry">
-                    Chemistry
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="chemistry"
-                    name="chemistry"
-                    placeholder="Marks / percentage"
-                  />
-                </div>
-                <div>
-                  <label className={labelClass} htmlFor="percentage">
-                    Percentage
-                  </label>
-                  <input
-                    className={inputClass}
-                    type="text"
-                    id="percentage"
-                    name="percentage"
-                    placeholder="Overall percentage"
-                  />
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="group mt-10 inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-200 hover:bg-navy-dark"
-              >
-                Submit
-                <ArrowRight
-                  size={16}
-                  className="transition-transform duration-200 group-hover:translate-x-1"
-                />
-              </button>
-            </form>
+            <EligibilityForm className="lg:col-span-8" />
             </div>
           </Reveal>
         </div>

@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Our Campus",
+  description:
+    "Our Madhapur centre is designed to provide students with a focused learning environment for aviation education and career preparation.",
+};
 
 export default function CampusPage() {
   return (

@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Admissions Process",
+  description:
+    "Our admissions process is designed to help students and parents make informed decisions about aviation careers, step by step.",
+};
 
 type Step = {
   title: string;

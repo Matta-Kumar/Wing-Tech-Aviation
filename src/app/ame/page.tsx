@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Button from "@/components/Button";
 import Reveal from "@/components/Reveal";
 import KenBurnsImage from "@/components/KenBurnsImage";
 import InfoSection from "@/components/InfoSection";
+
+export const metadata: Metadata = {
+  title: "Aircraft Maintenance Engineering (AME) Pathway",
+  description:
+    "Aircraft Maintenance Engineering is an aviation career for students interested in engineering, mechanical systems, electrical systems and aircraft technology.",
+};
 
 export default function AmePage() {
   return (

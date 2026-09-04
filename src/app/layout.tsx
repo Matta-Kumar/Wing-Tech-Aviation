@@ -28,10 +28,34 @@ const fraunces = Fraunces({
   style: ["normal", "italic"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://site-two-eta-83.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Wing Tech Aviation | Institute of Aviation",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Wing Tech Aviation | Institute of Aviation",
+    template: "%s | Wing Tech Aviation",
+  },
   description:
     "Career-focused aviation training and counselling in Madhapur, Hyderabad — Commercial Pilot Licence, Aircraft Maintenance Engineering, Cabin Crew, and Airport Management pathways.",
+  openGraph: {
+    siteName: "Wing Tech Aviation",
+    type: "website",
+    locale: "en_IN",
+    url: "/",
+    images: [
+      {
+        url: "/images/logo-full.png",
+        width: 1200,
+        height: 630,
+        alt: "Wing Tech Institute of Aviation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
