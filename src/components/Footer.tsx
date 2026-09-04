@@ -84,18 +84,17 @@ export default function Footer() {
             Wing Tech Aviation does not guarantee employment, licensing,
             medical clearance or career outcomes.
           </p>
-          <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-white/40">
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-x-2 gap-y-1 text-xs text-white/40">
             <Link href="/privacy" className="hover:text-white">
               Privacy Policy
             </Link>
-            <span aria-hidden="true">&middot;</span>
             <span>
               Design &amp; Developed by{" "}
               <a
                 href="https://www.pyritedigital.com/website-development/ai-website-development/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white"
+                className="font-semibold text-white/70 hover:text-white"
               >
                 Pyrite Digital
               </a>
