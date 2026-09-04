@@ -131,10 +131,10 @@ export default function PrivacyPage() {
                 </a>{" "}
                 or{" "}
                 <a
-                  href="tel:+919515075140"
+                  href="tel:+919391939914"
                   className="text-navy hover:underline"
                 >
-                  +91 95150 75140
+                  +91 93919 39914
                 </a>
                 .
               </p>

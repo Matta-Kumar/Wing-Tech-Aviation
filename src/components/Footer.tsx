@@ -58,8 +58,8 @@ export default function Footer() {
             Madhapur, Hyderabad, Telangana – 500081
             <br />
             Phone:{" "}
-            <a href="tel:+919515075140" className="hover:text-white">
-              +91 95150 75140
+            <a href="tel:+919391939914" className="hover:text-white">
+              +91 93919 39914
             </a>
             <br />
             Email:{" "}
@@ -84,12 +84,23 @@ export default function Footer() {
             Wing Tech Aviation does not guarantee employment, licensing,
             medical clearance or career outcomes.
           </p>
-          <Link
-            href="/privacy"
-            className="mt-3 inline-block text-xs text-white/40 hover:text-white"
-          >
-            Privacy Policy
-          </Link>
+          <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-white/40">
+            <Link href="/privacy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">&middot;</span>
+            <span>
+              Design &amp; Developed by{" "}
+              <a
+                href="https://www.pyritedigital.com/website-development/ai-website-development/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Pyrite Digital
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </footer>

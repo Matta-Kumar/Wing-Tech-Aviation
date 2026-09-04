@@ -69,8 +69,8 @@ export default function ContactPage() {
                 <div className="flex gap-2">
                   <dt className="font-medium text-navy">Phone:</dt>
                   <dd>
-                    <a href="tel:+919515075140" className="hover:text-navy">
-                      +91 95150 75140
+                    <a href="tel:+919391939914" className="hover:text-navy">
+                      +91 93919 39914
                     </a>
                   </dd>
                 </div>
@@ -78,10 +78,10 @@ export default function ContactPage() {
                   <dt className="font-medium text-navy">WhatsApp:</dt>
                   <dd>
                     <a
-                      href="https://wa.me/919515075140"
+                      href="https://wa.me/919391939914"
                       className="hover:text-navy"
                     >
-                      +91 95150 75140
+                      +91 93919 39914
                     </a>
                   </dd>
                 </div>
